@@ -113,6 +113,25 @@
             <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+            <dependency>
+        <groupId>org.java-websocket</groupId>
+        <artifactId>Java-WebSocket</artifactId>
+        <version>1.5.3</version>
+    </dependency>
+
+    <!-- SQLite Database for User Authentication -->
+    <dependency>
+        <groupId>org.xerial</groupId>
+        <artifactId>sqlite-jdbc</artifactId>
+        <version>3.41.2.1</version>
+    </dependency>
+
+    <!-- Gson (for JSON Parsing) -->
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.10.1</version>
+    </dependency>
     </dependencies>
 
     <build>
