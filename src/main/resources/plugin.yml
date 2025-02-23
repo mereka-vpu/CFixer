@@ -1,0 +1,12 @@
+name: CFixer
+version: 1.0
+main: nzst.laminan.websocketplugin
+api-version: 1.16
+description: WebSocket plugin to manage users & files from Laminan Socket.
+commands:
+  ban:
+    description: Ban a player
+  kick:
+    description: Kick a player
+  pardon:
+    description: Unban a player
