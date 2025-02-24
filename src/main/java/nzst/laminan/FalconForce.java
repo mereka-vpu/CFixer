@@ -126,4 +126,9 @@ public class FalconForce extends JavaPlugin implements CommandExecutor {
         }
         return "****@****";
     }
+
+    public Map<String, Boolean> getLoggedIn() {
+    return loggedIn;
+}
+
 }

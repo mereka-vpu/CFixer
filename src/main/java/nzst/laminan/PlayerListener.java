@@ -21,7 +21,7 @@ public class PlayerListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         if (player.hasPermission("falcon.force")) {
-            plugin.loggedIn.put(player.getName(), false);
+            plugin.getLoggedIn().put(player.getName(), false);
             player.sendMessage(ChatColor.RED + "You must log in using /facon.");
         }
     }
@@ -29,7 +29,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onPlayerCommand(PlayerCommandPreprocessEvent event) {
         Player player = event.getPlayer();
-        Map<String, Boolean> loggedIn = plugin.loggedIn;
+        Map<String, Boolean> loggedIn = plugin.getLoggedIn();
         
         if (player.hasPermission("falcon.force") && !loggedIn.getOrDefault(player.getName(), false)) {
             String command = event.getMessage().split(" ")[0].toLowerCase();
@@ -40,3 +40,4 @@ public class PlayerListener implements Listener {
         }
     }
 }
+
