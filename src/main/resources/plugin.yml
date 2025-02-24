@@ -1,5 +1,5 @@
 name: CFixer
 version: 1.0
-main: nzst.laminan.falconforce
+main: nzst.laminan.falconforce.FalconForce
 api-version: 1.16
 description: Control Fixer For Survborn
